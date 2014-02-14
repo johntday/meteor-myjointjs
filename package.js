@@ -25,10 +25,8 @@ Package.on_use(function (api) {
 		'lib/joint-all.js'
 	], 'client');
 
-	// for backward compat before Meteor linker changes
-  if (typeof api.export !== 'undefined') {
     api.export([
       'joint',
     ], 'client');
-  }
+
 });
