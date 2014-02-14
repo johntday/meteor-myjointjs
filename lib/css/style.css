@@ -1,0 +1,34 @@
+#paper {
+    position: absolute;
+    overflow: hidden;
+}
+#paper .paper-scroller {
+    width: 100%;
+    height: 100%;
+}
+#paper svg {
+    /* Grid background image */
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHUlEQVQYV2NkYGAwBuKzQIwXMBJSAJMfVUidcAQAnUQBC6jEGBUAAAAASUVORK5CYII=');
+    box-shadow: 1px 1px 1px lightgray;
+}
+
+.element.basic.Rect rect,
+.element.basic.Circle circle,
+.element.devs.Model rect {
+    -webkit-svg-shadow: 2px 2px 5px gray;
+}
+
+.element.basic.Path path { -webkit-svg-shadow: 1px 1px 2px gray; }
+.element.basic.Path path { fill: #3e3f47; }
+
+.selection-box {
+    border: 1px solid #1ABC9C;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin-top: -3px;
+    margin-left: -3px;
+    box-shadow: 2px 2px 5px lightgray;
+}
+.link-tools .tool-options {
+    display: block;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "myjointjs",
+  "description": "Flavor of JointJS",
+  "homepage": "https://github.com/johntday/meteor-myjointjs",
+  "author": "David Durman (http://www.daviddurman.com/)",
+  "version": "0.1.0",
+  "git": "https://github.com/johntday/meteor-myjointjs.git",
+  "packages": {
+  }
+}

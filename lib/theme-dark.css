@@ -1,0 +1,49 @@
+.inspector,
+.toolbar,
+#stencil {
+   background-color: #333;
+   border-top: 1px solid #4f4f4f;
+   color: #bcbcbc;
+   text-shadow: 0 -1px 0 #000;
+}
+#stencil .elements {
+   text-shadow: none;
+   background-color: transparent;
+}
+#stencil {
+   background-color: hsla(220,11%,97%,.95);
+}
+.inspector label {
+   font-size: 12px;
+}
+.inspector input,
+.inspector textarea {
+   text-shadow: 0 -1px 0 #000;
+   color: #ddd;
+   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1),0px 0 0 1px rgba(255,255,255,0.1);
+   border: 1px solid black;
+   background: transparent;
+   height: 20px;
+   line-height: 20px;
+}
+.toolbar, #stencil {
+   border-top: none;
+}
+.toolbar .btn {
+   background-color: #fafafa;
+   background-image: -webkit-linear-gradient(top,#fff,#f2f2f2);
+   background-image: -moz-linear-gradient(top,#fff,#f2f2f2);
+   background-image: linear-gradient(top,#fff,#f2f2f2);
+   background-repeat: repeat-x;
+   border: 1px solid #d4d4d4;
+   color: #333;
+   text-shadow: none;
+}
+
+.halo .box {
+   color: #bcbcbc;
+   font-size: 8px;
+   background-color: #333;
+   text-shadow: 0 -1px 0 #000;
+   border: 1px solid #4f4f4f;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>My Test</title>
+        <link rel="stylesheet" type="text/css" href="../lib/joint.css" />
+        <link rel="stylesheet" type="text/css" href="../lib/joint.ui.stencil.css" />
+        <link rel="stylesheet" type="text/css" href="../lib/joint.ui.halo.css" />
+        <link rel="stylesheet" type="text/css" href="../lib/joint.ui.selectionView.css" />
+        <link rel="stylesheet" type="text/css" href="../lib/joint.ui.paperScroller.css" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link rel="stylesheet" type="text/css" href="./theme-dark.css" />
+    </head>
+    <body>
+        <!-- <div class="header"> -->
+        	<!-- header -->
+        <!-- </div> -->
+        <div class="toolbar">
+            <button id="btn-undo"           class="btn">undo</button>
+            <button id="btn-redo"           class="btn">redo</button>
+            <button id="btn-clear"          class="btn">clear</button>
+            <button id="btn-svg"            class="btn">open as SVG</button>
+            <button id="btn-zoom-in"        class="btn">zoom in</button>
+            <button id="btn-zoom-out"       class="btn">zoom out</button>
+            <button id="btn-find-element"   class="btn">find element</button>
+            <button id="btn-center-content" class="btn">center content</button>
+            <button id="btn-layout"         class="btn">layout</button>
+            <button id="btn-group"          class="btn">group</button>
+            <button id="btn-ungroup"        class="btn">ungroup</button>
+        </div>
+        <div id="stencil">
+            <label>Stencil</label>
+        </div>
+        <div id="paper"></div>
+        <!--<div id="inspector-holder-create"></div>-->
+        <!--<div id="message"></div>-->
+        <!--<div class="inspector">-->
+        <!--    <div id="layout"></div>-->
+        <!--</div>-->
+
+        <script src="../lib/joint.js"></script>
+        <script src="../lib/joint.shapes.devs.js"></script>
+        <script src="../lib/joint.shapes.uml.js"></script>
+        <script src="../lib/joint.ui.halo.js"></script>
+        <script src="../lib/joint.ui.selectionView.js"></script>
+        <script src="../lib/joint.ui.clipboard.js"></script>
+        <script src="../lib/joint.ui.stencil.js"></script>
+        <script src="../lib/joint.ui.paperScroller.js"></script>
+        <script src="../lib/joint.format.svg.js"></script>
+        <script src="../lib/joint.dia.command.js"></script>
+        <script src="../lib/joint.dia.validator.js"></script>
+
+
+        <script src="./main.js"></script>
+	<!--[if IE 9]>
+	    <script src="./base64.js"></script>
+	    <script type="text/javascript">
+	      // SVG Export requires window.btoa/atoa extension to convert binary data (the `b`)
+	      // to base64 (ascii, the `a`). Unfortunately it is not available in IE9.
+	      // To get it working under IE9 you may include compatible solution like `stringencoders`
+	      // (`https://code.google.com/p/stringencoders/source/browse/trunk/javascript/base64.js`)
+	      // and create a global alias `btoa`.
+	      window.btoa = base64.encode
+	      // `-ms-user-select: none` doesn't work in IE9
+	      document.onselectstart = function() { return false; };
+	    </script>
+	<![endif]-->
+    </body>
+</html>

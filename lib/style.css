@@ -1,0 +1,187 @@
+body {
+   -webkit-user-select: none;
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   margin: 0;
+   padding: 0;
+   font-family: Arial;
+}
+
+.header {
+   padding: 10px;
+}
+
+/* Paper */
+
+#paper {
+   position: absolute;
+   top: 110px;
+   left: 241px;
+   right: 241px;
+   bottom: 0;
+   overflow: hidden;
+   background-color: hsla(220,11%,97%,.95);
+}
+
+#paper .paper-scroller {
+   width: 100%;
+   height: 100%;
+}
+
+#paper svg {
+   /* Grid background image */
+   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHUlEQVQYV2NkYGAwBuKzQIwXMBJSAJMfVUidcAQAnUQBC6jEGBUAAAAASUVORK5CYII=');
+   background-color: white;
+   box-shadow: 1px 1px 1px lightgray;
+}
+
+#paper svg .drawable {
+   /* Grid background image */
+   fill: white;
+   stroke: black;
+   stroke-width: 1px;
+}
+
+.element.basic.Rect rect,
+.element.basic.Circle circle,
+.element.devs.Model rect {
+   -webkit-svg-shadow: 2px 2px 5px gray;
+}
+
+.element.basic.Path path { -webkit-svg-shadow: 1px 1px 2px gray; }
+.element.basic.Path path { fill: #3e3f47; }
+
+/* Stencil */
+
+#stencil {
+   position: absolute;
+   left: 0;
+   top: 110px;
+   bottom: 0;
+   width: 240px;
+   border: 1px solid #333;
+   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1),0px 0 0 1px rgba(255,255,255,0.1);
+}
+
+#stencil label {
+   display: block;
+   text-align: center;
+   background-color: #333;   
+   font-size: 10px;
+   line-height: 18px;
+   height: 18px;
+}
+
+.stencil {
+   position: absolute;
+   left: 0;
+   top: 14px;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   border: none;
+}
+
+.stencil .elements {
+   height: 380px;
+}
+
+/* Inspector Panel */
+.inspector {
+   position: absolute;
+   top: 110px;
+   right: 0;
+   bottom: 0;
+   width: 240px;
+   border: 1px solid #333;
+}
+
+/* Halo */
+
+.halo .box {
+   box-shadow: 2px 2px 5px lightgray;  
+   border: 1px solid gray;
+   font-size: 8px;
+}
+
+/* Selection */
+
+.selection-box {
+   border: 1px solid #1ABC9C;
+   padding-right: 5px;
+   padding-bottom: 5px;
+   margin-top: -3px;
+   margin-left: -3px;
+   box-shadow: 2px 2px 5px lightgray;
+}
+
+/* Validation message */
+
+#message {
+   background-color: #e74c3c;
+   padding: 4px 8px;
+   color: white;
+   text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+   font-size: 13px;
+   line-height: 30px;
+   border: 1px solid #ccc;
+   background-image: -webkit-linear-gradient(top,#e74c3c,#c0392b);
+   background-image: -moz-linear-gradient(top,#e74c3c,#c0392b);
+   border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+   position: absolute;
+   right: 0;
+   display: none;
+}
+
+/* Toolbar */
+
+.toolbar {
+   position: absolute;
+   top: 70px;
+   left: 0;
+   right: 0;
+   padding-left: 246px;
+}
+
+.btn {
+   background-color: #49afcd;
+   padding: 4px 8px;
+   color: white;
+   text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+   font-size: 11px;
+   line-height: 30px;
+   border: 1px solid #ccc;
+   background-image: -webkit-linear-gradient(top,#5bc0de,#2f96b4);
+   background-image: -moz-linear-gradient(top,#5bc0de,#2f96b4);
+   background-image: linear-gradient(top,#5bc0de,#2f96b4);
+   border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+   margin: 0;
+   margin-left: -5px;
+   cursor: pointer;
+}
+
+.btn:hover {
+   text-decoration: underline;
+}
+
+/* Force-Directed layout */
+#layout {
+   border-bottom: 1px solid #333;
+}
+
+/* ElementEditor */
+
+.element-inspector {
+   padding: 10px;
+}
+.element-inspector label {
+   display: block;
+   margin-top: 5px;
+   margin-bottom: 10px;
+}
+.element-inspector input,
+.element-inspector textarea {
+   width: 215px;
+}
