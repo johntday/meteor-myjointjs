@@ -1,39 +1,12 @@
-#paper {
+/*#paper {
     position: absolute;
+    top: 110px;
     left: 241px;
-    overflow: hidden;
-}
-#stencil {
-    position: absolute;
-    left: 0;
-    width: 240px;
-    border: 1px solid #333;
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1),0px 0 0 1px rgba(255,255,255,0.1);
-}
-
-#stencil label {
-    display: block;
-    text-align: center;
-    background-color: #333;
-    font-size: 10px;
-    line-height: 18px;
-    height: 18px;
-}
-
-.stencil {
-    position: absolute;
-    left: 0;
-    top: 14px;
+    right: 241px;
     bottom: 0;
-    right: 0;
-    width: 100%;
-    border: none;
-}
-
-.stencil .elements {
-    height: 380px;
-}
-
+    overflow: hidden;
+    background-color: hsla(220,11%,97%,.95);
+}*/
 #paper .paper-scroller {
     width: 100%;
     height: 100%;
@@ -41,26 +14,37 @@
 #paper svg {
     /* Grid background image */
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHUlEQVQYV2NkYGAwBuKzQIwXMBJSAJMfVUidcAQAnUQBC6jEGBUAAAAASUVORK5CYII=');
+    /*background-color: white;*/
     box-shadow: 1px 1px 1px lightgray;
 }
+#paper svg .drawable {
+    /* Grid background image */
+    /*fill: white;*/
+    stroke: black;
+    stroke-width: 1px;
+}
 
-.element.basic.Rect rect,
-.element.basic.Circle circle,
-.element.devs.Model rect {
+.element.basic.Rect rect, .element.basic.Circle circle, .element.devs.Model rect {
     -webkit-svg-shadow: 2px 2px 5px gray;
 }
 
 .element.basic.Path path { -webkit-svg-shadow: 1px 1px 2px gray; }
 .element.basic.Path path { fill: #3e3f47; }
 
-.selection-box {
-    border: 1px solid #1ABC9C;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    margin-top: -3px;
-    margin-left: -3px;
-    box-shadow: 2px 2px 5px lightgray;
+/* Stencil */
+.stencil {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border: none;
 }
+.stencil .elements {
+    height: 380px;
+}
+
 .link-tools .tool-options {
     display: block;
 }
