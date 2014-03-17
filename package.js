@@ -22,8 +22,7 @@ Package.on_use(function (api) {
 		'lib/css/joint.ui.selectionView.css',
 		'lib/css/joint.ui.paperScroller.css',
 		'lib/css/style.css',
-		'lib/joint-all.js',
-	    'lib/joint.shapes.uml.js'
+		'lib/joint-all.js'
 	], 'client');
 
     api.export([
