@@ -7,7 +7,6 @@ Package.on_use(function (api) {
 	api.use([
 		'templating',
 		'handlebars',
-		'universal-events',
 		'jquery',
 	], 'client');
 
